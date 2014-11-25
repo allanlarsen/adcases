@@ -21,35 +21,19 @@ header {
   background: #dddddd; }
 
 body {
-  padding: 61px 0 0 0;
+  padding: 0 0 0 0;
   font-family: "Roboto", sans-serif;
   overflow-x: hidden; }
-
-#site-wrapper {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  top: -61px; }
-
-#site-canvas {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all; }
 
 .hero {
   min-height: 94vh;
   padding-top: 34vh; }
 
 .strategy, .test, .design, .product, .team {
-  min-height: 94vh;
-  padding-top: 34vh; }
+  min-height: 300px; }
 
 .introduction, .challenge, .solution {
-  min-height: 31.25vh; }
+  min-height: 300px; }
 
 .strategy-image, .test-image, .design-image {
   height: 300px;
@@ -75,10 +59,6 @@ body {
   position: fixed;
   right: 0;
   bottom: 40px; }
-
-#site-wrapper.show-nav #site-canvas {
-  -webkit-transform: translateX(30%);
-  transform: translateX(30%); }
 
 .menu {
   cursor: pointer;
@@ -119,5 +99,44 @@ body {
   top: 15px;
   transform: rotate(-405deg);
   transition: 1.25s 0.2s; }
+
+html {
+  overflow-y: hidden; }
+
+html, body, #wrapper {
+  height: 100%;
+  width: 100%;
+  margin: 0; }
+
+nav {
+  position: fixed;
+  z-index: 100;
+  right: 0;
+  top: 200px; }
+
+.main-container {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+#wrapper {
+  position: absolute;
+  top: 0;
+  -webkit-transition: -webkit-transform 1.5s cubic-bezier(0.8, 0, 0.2, 1); }
+
+.slide0 {
+  -webkit-transform: translateY(0%); }
+
+.slide1 {
+  -webkit-transform: translateY(-100%); }
+
+.slide2 {
+  -webkit-transform: translateY(-200%); }
+
+.slide3 {
+  -webkit-transform: translateY(-300%); }
+
+.slide4 {
+  -webkit-transform: translateY(-400%); }
 
 /*# sourceMappingURL=custom.css.map */

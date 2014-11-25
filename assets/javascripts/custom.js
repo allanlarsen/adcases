@@ -103,4 +103,6 @@ var Menu = {
     }
 };
 
+//Initiate menu animations
 Menu.init();
+
